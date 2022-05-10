@@ -51,14 +51,50 @@
     height: 60px;
     background: red;
 }
+/* soluzione ex-5 */
+.ex-5-square:hover{
+    transform: scale(1.5);
+}
+.ex-5-square:active{
+    transform: scale(0.5);
+}
+
+
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
+/* soluzione ex-6 */
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+
+/* soluzione ex-7 */
+.ex-7-img:hover{
+    filter: grayscale(100%);
+    transition-duration: 2s;
+}
+
+/* soluzione ex-8 */
+.ex-8-img:hover{
+    filter: grayscale(100%) sepia(100%);
+    transition-duration: 2s;
+    border-radius: 10px;
+}
+
 
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
 }
+/* soluzione ex-9 */
+.ex-9-img:hover{
+    filter: grayscale(100%) sepia(100%);
+    transition-duration: 1s;
+    border-radius: 10px;
+    transform: scale(0.5);
+}
+
+
 .ex-10-icon {
     font-size: 60px;
 }
