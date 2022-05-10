@@ -98,6 +98,11 @@
 .ex-10-icon {
     font-size: 60px;
 }
+/* soluzione ex-10 */
+
+.ex-10-icon{
+    transition-duration: 2s;
+}
 .ex-11-icon {
     font-size: 60px;
 }
@@ -121,6 +126,7 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+    animation-duration: 2s;
 }
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
@@ -129,4 +135,67 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+    animation-duration: 2s;
+}
+
+/* soluzione ex-13 */
+.ex-13-top-white{
+    animation-name: top-13;
+    animation-iteration-count: 2;
+}
+.ex-13-bottom-white{
+    animation-name: bottom-13;
+    animation-iteration-count: 2;
+}
+@keyframes top-13{
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+
+    25% {
+        top: -10px;
+        left: 85%;
+    }
+
+    50% {
+        top: 55px;
+        left: 85%;
+    }
+
+    75% {
+        top: 55px;
+        left: -10%;
+    }
+
+    100% {
+        top: -10px;
+        left: -10%;
+    }
+}
+@keyframes bottom-13{
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+
+    25% {
+        bottom: -10px;
+        right: 80%;
+    }
+
+    50% {
+        bottom: 55px;
+        right: 80%;
+    }
+
+    75% {
+        bottom: 55px;
+        right: -10%;
+    }
+
+    100% {
+        bottom: -10px;
+        right: -10%;
+    }
 }
