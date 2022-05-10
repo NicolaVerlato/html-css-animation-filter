@@ -141,11 +141,11 @@
 /* soluzione ex-13 */
 .ex-13-top-white{
     animation-name: top-13;
-    animation-iteration-count: 2;
+    animation-iteration-count: 1;
 }
 .ex-13-bottom-white{
     animation-name: bottom-13;
-    animation-iteration-count: 2;
+    animation-iteration-count: 1;
 }
 @keyframes top-13{
     0% {
