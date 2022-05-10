@@ -40,8 +40,9 @@
     background: red;
 }
 /* soluzione ex-4 */
-.ex-4-square{
-    display: none;
+.ex-4-square:hover{
+    transition-duration: 2s;
+    background: #f5f5f5;
 }
 
 
@@ -97,14 +98,43 @@
 
 .ex-10-icon {
     font-size: 60px;
+    animation-iteration-count: infinite;
+    transition-duration: 2s;
+    animation-name: complete-rotate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
 }
 /* soluzione ex-10 */
+    @keyframes complete-rotate{
+        from { 
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(-360deg);
+        }
+    }
 
-.ex-10-icon{
-    transition-duration: 2s;
-}
 .ex-11-icon {
     font-size: 60px;
+}
+
+/* soluzione ex-11 */
+.ex-11-icon:hover{
+    animation-name: rotate75;
+    animation-duration: 1s;
+}
+@keyframes rotate75 {
+    0% { 
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(270deg);
+    }
+
+    100%{ 
+        transform: rotate(0deg);
+    }
 }
 .ex-12-button, .ex-13-button {
     position: relative;
@@ -137,14 +167,18 @@
     height: 20px;
     animation-duration: 1s;
 }
+
+
 /* soluzione ex-12 */
 .ex-12-button:hover .ex-12-top-white{
     animation-name: top-12;
     animation-iteration-count: 1;
+    animation-timing-function: linear;
 }
 .ex-12-button:hover .ex-12-bottom-white{
     animation-name: bottom-12;
     animation-iteration-count: 1;
+    animation-timing-function: linear;
 }
 @keyframes top-12{
     0% {
@@ -201,14 +235,17 @@
     }
 }
 
+
 /* soluzione ex-13 */
 .ex-13-top-white{
     animation-name: top-13;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 .ex-13-bottom-white{
     animation-name: bottom-13;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 @keyframes top-13{
     0% {
