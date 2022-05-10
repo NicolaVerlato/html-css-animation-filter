@@ -126,7 +126,7 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
@@ -135,7 +135,70 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
-    animation-duration: 2s;
+    animation-duration: 1s;
+}
+/* soluzione ex-12 */
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: top-12;
+    animation-iteration-count: 1;
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: bottom-12;
+    animation-iteration-count: 1;
+}
+@keyframes top-12{
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+
+    25% {
+        top: -10px;
+        left: 85%;
+    }
+
+    50% {
+        top: 55px;
+        left: 85%;
+    }
+
+    75% {
+        top: 55px;
+        left: 10%;
+    }
+
+    100% {
+        top: 55px;
+        left: 85%;
+    }
+
+}
+
+@keyframes bottom-12{
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+
+    25% {
+        bottom: -10px;
+        right: 80%;
+    }
+
+    50% {
+        bottom: 55px;
+        right: 80%;
+    }
+
+    75% {
+        bottom: 55px;
+        right: 20%;
+    }
+
+    100% {
+        bottom: 55px;
+        right: 80%;
+    }
 }
 
 /* soluzione ex-13 */
